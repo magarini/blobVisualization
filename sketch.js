@@ -93,6 +93,6 @@ function windowResized() {
         //illustration
         illustrationBlob.radius=windowWidth/12
         illustrationBlob.positionX=windowWidth/5;
-        illustrationBlob.positionY=4*windowHeight/5;git add 
+        illustrationBlob.positionY=4*windowHeight/5;
 
 }

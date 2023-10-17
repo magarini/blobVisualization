@@ -10,16 +10,21 @@ class Blobbo{
     this.text;
     this.amplitude;
 
+
   }
   
   wave(num, amp, freq, speed){
     return amp * sin(freq * TWO_PI * num/this.nbPoints + this.time * speed);
   }
+
+  
   
   draw(){
     noStroke();
     fill(this.color);
     // filter(BLUR, 3);
+
+   
     beginShape();
 
     for(let i = 0; i < this.nbPoints; i++){
