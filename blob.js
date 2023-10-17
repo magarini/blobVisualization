@@ -2,10 +2,13 @@ class Blobbo{
   constructor(){
     this.nbPoints = 500;
     this.time = 0;
-    this.radius=windowWidth/5;
-    this.positionX=windowWidth/2;
-    this.positionY=windowHeight/2;
-    this.color='black';
+    this.radius;
+    this.positionX;
+    this.positionY;
+    this.color;
+    this.textColor;
+    this.text;
+    this.amplitude;
 
   }
   
@@ -21,7 +24,7 @@ class Blobbo{
 
     for(let i = 0; i < this.nbPoints; i++){
       let angle = TWO_PI * i / this.nbPoints;
-      let r = this.radius + this.wave(i, mouseX*0.05, 3, 1) + this.wave(i, mouseY*0.05, 7, 3) + this.wave(i, 5, 9, 0) + this.wave(i, 2, 13, -5);
+      let r = this.radius + this.wave(i, mouseX* this.amplitude, 3, 1) + this.wave(i, mouseY* this.amplitude, 7, 3) + this.wave(i, 5, 9, 0) + this.wave(i, 2, 13, -5);
       
       let x = this.positionX + r * cos(angle);
       let y = this.positionY + r * sin(angle);
@@ -32,7 +35,8 @@ class Blobbo{
     endShape();
     
     this.time += 0.01;
-    fill('white')
-    text('art',this.positionX,this.positionX);
+    fill(this.textColor);
+    textAlign(CENTER);
+    text(this.text,this.positionX,this.positionY);
   }
 }
