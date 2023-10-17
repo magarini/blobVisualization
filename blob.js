@@ -19,7 +19,7 @@ class Blobbo{
   draw(){
     noStroke();
     fill(this.color);
-
+    // filter(BLUR, 3);
     beginShape();
 
     for(let i = 0; i < this.nbPoints; i++){
