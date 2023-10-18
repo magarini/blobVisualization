@@ -44,4 +44,23 @@ class Blobbo{
     textAlign(CENTER);
     text(this.text,this.positionX,this.positionY);
   }
+
+  mouseOver(){
+    let scaledRadius=windowWidth/6;
+    let initialRadius=windowWidth/12;
+    if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius*2) {
+
+      this.radius=scaledRadius;
+      console.log('clickedInside')
+    }else{
+      this.radius=initialRadius;
+    }
+  }
+
+  clicked(){
+    if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius*2) {
+      this.radius=this.radius*2;
+      console.log('clickedInside')
+    }
+  }
 }

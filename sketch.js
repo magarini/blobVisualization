@@ -63,9 +63,15 @@ function draw(){
   gameBlob.draw();
   illustrationBlob.draw();
 
-
+  illustrationBlob.mouseOver();
 
 }
+
+
+function mousePressed(){
+  illustrationBlob.clicked(window.open('https://p5js.org/reference/#/p5.Element/mouseOver',"_self")); 
+  console.log('clicked')
+ }
 
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
