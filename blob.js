@@ -9,6 +9,10 @@ class Blobbo{
     this.textColor;
     this.text;
     this.amplitude;
+    this.url;
+
+    this.scaledRadius;
+    this.initialRadius;
 
 
   }
@@ -46,20 +50,16 @@ class Blobbo{
   }
 
   mouseOver(){
-    let scaledRadius=windowWidth/6;
-    let initialRadius=windowWidth/12;
-    if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius*2) {
-
-      this.radius=scaledRadius;
-      console.log('clickedInside')
+    if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius) {
+      this.radius=this.scaledRadius;
     }else{
-      this.radius=initialRadius;
+      this.radius=this.initialRadius;
     }
   }
 
   clicked(){
-    if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius*2) {
-      this.radius=this.radius*2;
+    if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius) {
+      window.open(this.url,"_self")
       console.log('clickedInside')
     }
   }

@@ -5,6 +5,14 @@ let designBlob;
 let gameBlob;
 let illustrationBlob;
 
+let netArtBlob;
+let webDesignBlob;
+let developmentBlob;
+let installationsBlob;
+let videoBlob;
+let creativeCodingBlob;
+
+
 
 function setup(){
   createCanvas(windowWidth, windowHeight);
@@ -16,6 +24,7 @@ function setup(){
   artBlob.textColor='black';
   artBlob.text='art';
   artBlob.amplitude=0.05;
+  artBlob.url='https://p5js.org/reference/#/p5.Element/mouseOver'
 
   techBlob = new Blobbo();
   techBlob.radius=windowWidth/4
@@ -50,9 +59,13 @@ function setup(){
   illustrationBlob.positionY=4*windowHeight/5;
   illustrationBlob.color=color(102, 204, 255,50);
   illustrationBlob.textColor='black';
-  illustrationBlob.text='illustration';
+  illustrationBlob.text='illustrations';
   illustrationBlob.amplitude=0.015;
-
+  
+  illustrationBlob.url='https://p5js.org/reference/#/p5.Element/mouseOver'
+  
+  illustrationBlob.initialRadius=illustrationBlob.radius;
+  illustrationBlob.scaledRadius=1.5*illustrationBlob.radius;
 }
 
 function draw(){
@@ -69,8 +82,7 @@ function draw(){
 
 
 function mousePressed(){
-  illustrationBlob.clicked(window.open('https://p5js.org/reference/#/p5.Element/mouseOver',"_self")); 
-  console.log('clicked')
+  illustrationBlob.clicked(); 
  }
 
 function windowResized() {
