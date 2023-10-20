@@ -9,122 +9,161 @@ let netArtBlob;
 let webDesignBlob;
 let developmentBlob;
 let installationsBlob;
-let videoBlob;
+let movingImageBlob;
 let creativeCodingBlob;
+let threeDGraphics;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   artBlob = new Blobbo();
-  artBlob.radius = windowWidth / 4;
-  artBlob.positionX = windowWidth / 3;
-  artBlob.positionY = 2*windowHeight / 7;
-  artBlob.color = color(255, 153, 153, 50);
+  artBlob.radius = windowWidth / 7;
+  artBlob.positionX = windowWidth / 3 + random(100);
+  artBlob.positionY = (35 / 100) * windowHeight+ random(100);
+  artBlob.color = "#EFC7C2";
   artBlob.textColor = "black";
   artBlob.text = "art";
-  artBlob.amplitude = 0.05;
+  artBlob.amplitude = 0.015;
   artBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   artBlob.initialRadius = artBlob.radius;
-  artBlob.scaledRadius = 1.5 * artBlob.radius;
+  artBlob.scaledRadius = 1.2 * artBlob.radius;
 
   techBlob = new Blobbo();
-  techBlob.radius = windowWidth / 4;
-  techBlob.positionX = windowWidth / 2;
-  techBlob.positionY = (3 * windowHeight) / 4;
-  techBlob.color = color(153, 153, 255, 50);
+  techBlob.radius = windowWidth / 8;
+  techBlob.positionX = windowWidth / 3+ random(100);
+  techBlob.positionY = (68 / 100) * windowHeight+ random(100);
+  techBlob.color = "#9DBBAE";
   techBlob.textColor = "black";
   techBlob.text = "tech";
-  techBlob.amplitude = 0.02;
+  techBlob.amplitude = 0.03;
   techBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   techBlob.initialRadius = techBlob.radius;
-  techBlob.scaledRadius = 1.5 * techBlob.radius;
+  techBlob.scaledRadius = 1.2 * techBlob.radius;
 
   designBlob = new Blobbo();
-  designBlob.radius = windowWidth / 4;
-  designBlob.positionX = (3 * windowWidth) / 4;
-  designBlob.positionY = windowHeight / 3;
-  designBlob.color = color(153, 255, 204, 50);
+  designBlob.radius = windowWidth / 8;
+  designBlob.positionX = (4 * windowWidth) / 7+ random(100);
+  designBlob.positionY = (3 * windowHeight) / 6+ random(100);
+  designBlob.color = "#FFE5D4";
   designBlob.textColor = "black";
   designBlob.text = "design";
-  designBlob.amplitude = 0.02;
+  designBlob.amplitude = 0.06;
   designBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   designBlob.initialRadius = designBlob.radius;
-  designBlob.scaledRadius = 1.5 * designBlob.radius;
+  designBlob.scaledRadius = 1.2 * designBlob.radius;
 
   gameBlob = new Blobbo();
-  gameBlob.radius = windowWidth / 12;
-  gameBlob.positionX = windowWidth / 2;
-  gameBlob.positionY = windowHeight / 5;
-  gameBlob.color = color(102, 204, 255, 50);
+  gameBlob.radius = windowWidth / 20;
+  gameBlob.positionX = windowWidth / 2 + random(100);
+  gameBlob.positionY = (28 / 100) * windowHeight + random(100);
+  gameBlob.color = color(191,211,193,220);
   gameBlob.textColor = "black";
   gameBlob.text = "games";
-  gameBlob.amplitude = 0.01;
+  gameBlob.amplitude = random(0.033);
   gameBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   gameBlob.initialRadius = gameBlob.radius;
-  gameBlob.scaledRadius = 1.5 * gameBlob.radius;
+  gameBlob.scaledRadius = 1.2 * gameBlob.radius;
 
   illustrationBlob = new Blobbo();
-  illustrationBlob.radius = windowWidth / 12;
-  illustrationBlob.positionX = windowWidth / 5;
-  illustrationBlob.positionY = (4 * windowHeight) / 5;
-  illustrationBlob.color = color(102, 204, 255, 50);
+  illustrationBlob.radius = windowWidth / 20;
+  illustrationBlob.positionX = (55 / 100) * windowWidth + random(100);
+  illustrationBlob.positionY = (40 / 100) * windowHeight + random(100);
+  illustrationBlob.color = color(191,211,193,220);
   illustrationBlob.textColor = "black";
   illustrationBlob.text = "illustrations";
-  illustrationBlob.amplitude = 0.015;
+  illustrationBlob.amplitude = random(0.033);
   illustrationBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   illustrationBlob.initialRadius = illustrationBlob.radius;
-  illustrationBlob.scaledRadius = 1.5 * illustrationBlob.radius;
+  illustrationBlob.scaledRadius = 1.2 * illustrationBlob.radius;
 
   netArtBlob = new Blobbo();
-  netArtBlob.radius = windowWidth / 12;
-  netArtBlob.positionX = windowWidth / 4;
-  netArtBlob.positionY = (3 * windowHeight) / 5;
-  netArtBlob.color = color(102, 204, 255, 50);
+  netArtBlob.radius = windowWidth / 20;
+  netArtBlob.positionX = windowWidth / 6+ random(100);
+  netArtBlob.positionY = (3 * windowHeight) / 6+ random(100);
+  netArtBlob.color = color(191,211,193,220);
   netArtBlob.textColor = "black";
   netArtBlob.text = "net art";
-  netArtBlob.amplitude = 0.015;
+  netArtBlob.amplitude = random(0.033);
   netArtBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   netArtBlob.initialRadius = netArtBlob.radius;
-  netArtBlob.scaledRadius = 1.5 * netArtBlob.radius;
+  netArtBlob.scaledRadius = 1.2 * netArtBlob.radius;
 
   webDesignBlob = new Blobbo();
-  webDesignBlob.radius = windowWidth / 12;
-  webDesignBlob.positionX = (3 * windowWidth) / 4;
-  webDesignBlob.positionY = (3 * windowHeight) / 5;
-  webDesignBlob.color = color(102, 204, 255, 50);
+  webDesignBlob.radius = windowWidth / 20;
+  webDesignBlob.positionX = (60 / 100) * windowWidth+ random(100);
+  webDesignBlob.positionY = (65 / 100) * windowHeight+ random(100);
+  webDesignBlob.color = color(191,211,193,220);
   webDesignBlob.textColor = "black";
   webDesignBlob.text = "web design";
-  webDesignBlob.amplitude = 0.015;
+  webDesignBlob.amplitude = random(0.033);
   webDesignBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   webDesignBlob.initialRadius = webDesignBlob.radius;
-  webDesignBlob.scaledRadius = 1.5 * webDesignBlob.radius;
+  webDesignBlob.scaledRadius = 1.2 * webDesignBlob.radius;
 
   developmentBlob = new Blobbo();
-  developmentBlob.radius = windowWidth / 12;
-  developmentBlob.positionX = (4 * windowWidth) / 5;
-  developmentBlob.positionY = (4 * windowHeight) / 5;
-  developmentBlob.color = color(102, 204, 255, 50);
+  developmentBlob.radius = windowWidth / 20;
+  developmentBlob.positionX = (50 / 100) * windowWidth+ random(100);
+  developmentBlob.positionY = (75 / 100) * windowHeight+ random(100);
+  developmentBlob.color = color(191,211,193,220);
   developmentBlob.textColor = "black";
   developmentBlob.text = "development";
-  developmentBlob.amplitude = 0.015;
+  developmentBlob.amplitude = random(0.033);
   developmentBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   developmentBlob.initialRadius = developmentBlob.radius;
-  developmentBlob.scaledRadius = 1.5 * developmentBlob.radius;
+  developmentBlob.scaledRadius = 1.2 * developmentBlob.radius;
 
   installationsBlob = new Blobbo();
-  installationsBlob.radius = windowWidth / 12;
-  installationsBlob.positionX = ( windowWidth) / 10;
-  installationsBlob.positionY = ( windowHeight) / 6;
-  installationsBlob.color = color(102, 204, 255, 50);
+  installationsBlob.radius = windowWidth / 20;
+  installationsBlob.positionX = (3 * windowWidth) / 20 + random(100);
+  installationsBlob.positionY = (20 / 100) * windowHeight+ random(100);
+  installationsBlob.color = color(191,211,193,220);
   installationsBlob.textColor = "black";
   installationsBlob.text = "installations";
-  installationsBlob.amplitude = 0.015;
+  installationsBlob.amplitude = random(0.033);
   installationsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   installationsBlob.initialRadius = installationsBlob.radius;
-  installationsBlob.scaledRadius = 1.5 * installationsBlob.radius;
+  installationsBlob.scaledRadius = 1.2 * installationsBlob.radius;
+
+  movingImageBlob = new Blobbo();
+  movingImageBlob.radius = windowWidth / 20;
+  movingImageBlob.positionX = windowWidth / 10+ random(100);
+  movingImageBlob.positionY = (4 * windowHeight) / 10+ random(100);
+  movingImageBlob.color = color(191,211,193,220);
+  movingImageBlob.textColor = "black";
+  movingImageBlob.text = "movingImage";
+  movingImageBlob.amplitude = random(0.033);
+  movingImageBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  movingImageBlob.initialRadius = movingImageBlob.radius;
+  movingImageBlob.scaledRadius = 1.2 * movingImageBlob.radius;
+
+  creativeCodingBlob = new Blobbo();
+  creativeCodingBlob.radius = windowWidth / 20;
+  creativeCodingBlob.positionX = windowWidth / 10;
+  creativeCodingBlob.positionY = (55 / 100) * windowHeight;
+  creativeCodingBlob.color = color(191,211,193,220);
+  creativeCodingBlob.textColor = "black";
+  creativeCodingBlob.text = "creativeCoding";
+  creativeCodingBlob.amplitude = random(0.033);
+  creativeCodingBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  creativeCodingBlob.initialRadius = creativeCodingBlob.radius;
+  creativeCodingBlob.scaledRadius = 1.2 * creativeCodingBlob.radius;
+
+  threeDGraphicsBlob = new Blobbo();
+  threeDGraphicsBlob.radius = windowWidth / 20;
+  threeDGraphicsBlob.positionX = (15 / 100) * windowWidth;
+  threeDGraphicsBlob.positionY = (68 / 100) * windowHeight;
+  threeDGraphicsBlob.color = color(191,211,193,220);
+  threeDGraphicsBlob.textColor = "black";
+  threeDGraphicsBlob.text = "3D graphics";
+  threeDGraphicsBlob.amplitude = random(0.033);
+  threeDGraphicsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  threeDGraphicsBlob.initialRadius = threeDGraphicsBlob.radius;
+  threeDGraphicsBlob.scaledRadius = 1.2 * threeDGraphicsBlob.radius;
 }
 
 function draw() {
   background("#fff");
+  // background("#000");
+
   artBlob.draw();
   techBlob.draw();
   designBlob.draw();
@@ -134,6 +173,9 @@ function draw() {
   webDesignBlob.draw();
   developmentBlob.draw();
   installationsBlob.draw();
+  movingImageBlob.draw();
+  creativeCodingBlob.draw();
+  threeDGraphicsBlob.draw();
 
   artBlob.mouseOver();
   techBlob.mouseOver();
@@ -144,6 +186,9 @@ function draw() {
   webDesignBlob.mouseOver();
   developmentBlob.mouseOver();
   installationsBlob.mouseOver();
+  movingImageBlob.mouseOver();
+  creativeCodingBlob.mouseOver();
+  threeDGraphicsBlob.mouseOver();
 }
 
 function mousePressed() {
@@ -156,6 +201,9 @@ function mousePressed() {
   webDesignBlob.clicked();
   developmentBlob.clicked();
   installationsBlob.clicked();
+  movingImageBlob.clicked();
+  creativeCodingBlob.clicked();
+  threeDGraphicsBlob.clicked();
 }
 
 function windowResized() {
@@ -176,27 +224,42 @@ function windowResized() {
   designBlob.positionY = windowHeight / 3;
 
   //games
-  gameBlob.radius = windowWidth / 12;
+  gameBlob.radius = windowWidth / 20;
   gameBlob.positionX = windowWidth / 2;
   gameBlob.positionY = windowHeight / 5;
 
   //netArt
-  netArtBlob.radius = windowWidth / 12;
+  netArtBlob.radius = windowWidth / 20;
   netArtBlob.positionX = windowWidth / 4;
   netArtBlob.positionY = (3 * windowHeight) / 5;
 
   //webDesign
-  webDesignBlob.radius = windowWidth / 12;
+  webDesignBlob.radius = windowWidth / 20;
   webDesignBlob.positionX = (3 * windowWidth) / 4;
   webDesignBlob.positionY = (3 * windowHeight) / 5;
 
   //development
-  developmentBlob.radius = windowWidth / 12;
-  developmentBlob.positionX = (3 * windowWidth) / 4;
-  developmentBlob.positionY = (3 * windowHeight) / 5;
+  developmentBlob.radius = windowWidth / 20;
+  developmentBlob.positionX = (4 * windowWidth) / 5;
+  developmentBlob.positionY = (4 * windowHeight) / 5;
 
   //installations
-  installationsBlob.radius = windowWidth / 12;
-  installationsBlob.positionX = (3 * windowWidth) / 4;
-  installationsBlob.positionY = (3 * windowHeight) / 5;
+  installationsBlob.radius = windowWidth / 20;
+  installationsBlob.positionX = (3 * windowWidth) / 20;
+  installationsBlob.positionY = windowHeight / 6;
+
+  //movingImage
+  movingImageBlob.radius = windowWidth / 20;
+  movingImageBlob.positionX = windowWidth / 10;
+  movingImageBlob.positionY = (4 * windowHeight) / 10;
+
+  //creativeCoding
+  creativeCodingBlob.radius = windowWidth / 20;
+  creativeCodingBlob.positionX = windowWidth / 10;
+  creativeCodingBlob.positionY = (9 * windowHeight) / 10;
+
+  //threeDGraphics
+  threeDGraphicsBlob.radius = windowWidth / 20;
+  threeDGraphicsBlob.positionX = (6 * windowWidth) / 10;
+  threeDGraphicsBlob.positionY = (9 * windowHeight) / 10;
 }
