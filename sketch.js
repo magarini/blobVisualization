@@ -13,8 +13,16 @@ let movingImageBlob;
 let creativeCodingBlob;
 let threeDGraphics;
 
+
+function preload() {
+  myFont = loadFont('fonts/Poppins-Regular.ttf');
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+
+  textFont(myFont);
+
   artBlob = new Blobbo();
   artBlob.radius = windowWidth / 7;
   artBlob.positionX = windowWidth / 3 + random(100);
