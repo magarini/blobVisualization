@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
+
 canvas {
   display: block;
+}
+
+nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  padding:16px 24px;
+  position: fixed;
+  width:100%;
+  box-sizing: border-box;
+}
+
+nav a{
+  text-decoration: none;
+  color:black;
+  margin:8px;
+}
+
+.menu{
+  display:flex;
+  flex-direction: row;
+}
+
+.menu a{
+  text-decoration: none;
+  color:black;
 }
