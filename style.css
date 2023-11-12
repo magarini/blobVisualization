@@ -3,10 +3,19 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  width:100dvw;
 }
 
 canvas {
   display: block;
+  z-index:-1;
+  position:absolute;
+  top:0;
+  max-width:100dvw!important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 nav{
@@ -18,6 +27,8 @@ nav{
   position: fixed;
   width:100%;
   box-sizing: border-box;
+  z-index:2;
+  /* background-color: white; */
 }
 
 nav a{
@@ -34,4 +45,71 @@ nav a{
 .menu a{
   text-decoration: none;
   color:black;
+}
+
+.art{
+  display:flex;
+  flex-direction: column;
+}
+
+.art nav{
+  /* position: static; */
+}
+
+main{
+  display: grid;
+padding: 80px 40px;
+/* flex-direction: column;
+align-items: flex-start;
+gap: 80px;
+align-self: stretch;  */
+width:100%;
+box-sizing: border-box;
+
+
+grid-template-columns:
+  repeat(3, minmax(200px, 1fr));
+  gap: 80px;
+
+}
+
+.projectContainer{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+/* flex: 1 0 0;  */
+/* background-color: white; */
+}
+
+.projectImg img{
+width:100%;
+}
+
+.projectInfo{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch; 
+}
+
+.projectMainInfo{
+  display: flex;
+padding-bottom: 0px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch; 
+border-bottom: 1px black solid;
+}
+
+.projectDetails{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch; 
+}
+
+.art canvas{
+  z-index: -1;
 }

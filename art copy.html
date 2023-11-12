@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8" />
+
+    </head>
+    <style>
+    body{
+        font-family:Roboto Mono, monospace;
+        margin:0;
+        padding:0;
+        cursor: crosshair;
+    
+    }
+    
+    
+    
+    .navbar{
+        background-color: white;
+        border-bottom:solid;
+    }
+    
+    .navbar-brand{
+        letter-spacing:20px;
+        
+    }
+    
+    .nav-item{
+        padding:0 5px;
+    }
+    
+    header{
+        width:40%;
+        padding-left:20px;
+        color: black;
+        font-weight:light;
+        letter-spacing:20px;
+        border-left:solid;
+        
+          
+    }
+    
+    li{
+        display:inline-block;
+        padding:5px 5px 5px 10px;
+        border-left:solid;
+        color:black;
+        
+    }
+    
+    li:hover{
+        transform:scale(1.2);
+        background-color:lightcoral;
+        box-shadow:10px 10px rgb(61, 61, 61);
+        transform:skewY(2deg);
+    }
+    
+    
+    
+    .seeonly button:hover{
+         transform:scale(1.2);
+         box-shadow:10px 10px rgb(61, 61, 61);
+        transform:skewY(2deg);
+        background-color:lightcoral;
+    } 
+    
+    .selected{
+        transform:scale(1.2);
+        background-color:lightcoral;
+        box-shadow:10px 10px rgb(61, 61, 61);
+        transform:skewY(2deg);
+    
+    }
+    
+    
+    main{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:100px;
+        margin-bottom:100px;
+        
+       
+        
+    }
+    
+    
+    section .row{
+        display:flex;
+        /* flex-wrap:wrap; */
+        width:100%;
+        /*align-items:center;*/
+        justify-content: space-between;
+        
+    
+    }
+    
+    h2{
+        border-bottom:solid 2px;
+        padding-bottom:3px;
+            background-color:white;
+    
+        
+    }
+    
+    p{
+        margin-top:20px;
+        background-color:white;
+    }
+    
+    hr{
+        border:solid 1px;
+        width:100%;
+        margin:60px 0;
+    }
+    
+    details{
+        border-bottom:solid 2px; 
+        padding-bottom:10px;
+        font-size:90%;
+        background-color:white;
+    
+    }
+    
+    
+    
+    a{
+        text-decoration:none;
+        color:black;
+    }
+    
+    a:hover{
+        text-decoration:none;
+        color:black;
+    }
+    
+    .column{
+        flex:33%;
+        max-width: 33%;
+        
+    }
+    .seeonly{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        margin-top:50px;
+        border-bottom:2px solid;
+    }
+    
+    .eyes{
+        width:100%;
+        padding-right:100px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .seeonly p{
+        width:100%;
+    }
+    
+    .seeonly img{
+        height:20px;
+    }
+    
+    .seeonly a{
+        background-color: white;
+        border-style:none;
+        /* border-right:2px solid; */
+        width:100%;
+        margin:0 2px;
+    }
+    
+    main a{
+        background-color: white;
+        border-style:none;
+        position:relative;
+        margin:20px;
+       
+    }
+    
+    
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    a:hover .image {
+      opacity: 0.1;
+    }
+    
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    a:hover .middle {
+      opacity: 1;
+    
+    }
+    
+    .title {
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+    
+    
+        </style>
+    <body class="art">
+
+        <nav><a href>magarini</a>
+            <div class="menu">
+                <a href>art</a>
+                <a href>design</a>
+                <a href>development</a>
+                <a href>about</a>
+
+            </div>
+        </nav>
+        <main>
+
+            <main>
+                <a href="https://magarini.itch.io/5am" target="_blank"><img
+                        class="image"
+                        src="https://64.media.tumblr.com/31398c1d3b8c3e5fa7bab669edc9d066/c3cd06057c681d62-7a/s540x810/c1c5bd5ef887114bf79ef7127310aaf09c356ff2.png"><div
+                        class="middle"><div class="title"><h3>5AM</h3>Year: 2020
+                            <br>
+                            Type: personal game</div></div></a>
+                <a href="https://magarini.itch.io/memories-of-miss-lime"
+                    target="_blank"><img class="image"
+                        src="https://64.media.tumblr.com/278a57e68cd7419d56c01b0fa84d93db/586cb4768ab858af-5d/s540x810/d004021e308a93690cc276f61c5bc61bf2761ca0.jpg"><div
+                        class="middle"><div class="title"><h3>Memories of Miss
+                                Lime</h3>Year: 2020 <br>
+                            Type: interactive fiction</div></div></a>
+                <a href="https://magarini.github.io/thebedroomgate/"
+                    target="_blank"
+                    style="display:flex;flex-direction: column;justify-content: space-around;"><img
+                        class="image"
+                        src="https://64.media.tumblr.com/811f6767f6899d659e349d2f4932c9a9/3d489354d7bec080-59/s540x810/79708059f5b6294de0602196eb3aeb6d086e913e.png"><div
+                        class="middle"><div class="title">
+                            <h3>Midnight Explorations</h3>
+                            Year: 2019<br>
+                            Type: net art<br>
+                            Sound Design:Anastasis Priftis</div></div></a>
+                <a href="https://acyberroomofourown.space/" target="_blank"><img
+                        class="image"
+                        src="https://66.media.tumblr.com/2d393d4837ab0870dfd3796bd1969cc2/369968bbb41818c3-1d/s540x810/f8fd2268519dcd9a0d36f318b3ff1f890f884a00.jpg"><div
+                        class="middle"><div class="title"><h3>a cyber room of
+                                our own</h3>Year: 2019-ongoing<br>
+                            Type: participatory art & research <br>
+                            Team: Rallou Karella, Ioanna Digenaki, Katerina
+                            Magarini</div></div></a>
+
+                <a href="https://magarini.github.io/ghostGuests/"
+                    target="_blank"><img class="image"
+                        src="https://64.media.tumblr.com/c1fc5ed770aa6d892454a9e5abb92979/464b2731ca4619e9-a3/s540x810/d0eaa10f0c77cc8310a94405091b8b6ab6b9b20c.jpg"><div
+                        class="middle"><div class="title"><h3>Visiting ghosts</h3>Year:
+                            2020-ongoing<br>
+
+                            Type: personal game</div></div></a>
+                <a href="https://magarini.github.io/archiveofeverydayfragments/"
+                    target="_blank" style="width:540px;"><img class="image"
+                        src="https://magarini.github.io/archiveofeverydayfragments/59.jpg"><div
+                        class="middle"><div class="title"><h3>Archive of
+                                Everyday Fragments</h3>
+                            Year: 2018 <br>
+                            Type: research thesis project / drawings <br>
+                            Supervisor: Apostolos Kalfopoulos</div></div></a>
+
+                <a href="https://magarini.github.io/primitiveObjects/"
+                    target="_blank"><img class="image"
+                        src="https://66.media.tumblr.com/1a70634a04f06c05857bc2fa593ccc88/41ab43e9fd53bf45-ab/s540x810/2fa69f78f4dd5ae7a389150021fe9d455acd4cab.gifv"><div
+                        class="middle"><div class="title">
+                            <h3>Primitive Objects</h3>
+                            Year: 2019 <br>
+                            Type: urban game<br>
+                            Team:Tomo Kihara, Bronwin Patrickson, Robb Mitchell
+                            & Katerina Magarini</div></div></a>
+
+                <a href="https://magarini.github.io/dreampool/" target="_blank"
+                    style="width:540px;"><img class="image"
+                        src="https://magarini.github.io/dreampool/4.jpg"><div
+                        class="middle"><div class="title">
+                            <h3>The Dreampool</h3>
+                            Year: 2018 <br>
+                            Type: illustrations<br>
+                        </div></div></a>
+
+                <div class="videos" style="width:100%;margin:10px;"><iframe
+                        src="https://player.vimeo.com/video/350596737"
+                        width="100%" height="360" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <a href style="width:90%;"><div class="image"
+                        style="display:flex;flex-direction:row;flex-wrap:nowrap;justify-content: space-around;">
+                        <img
+                            src="https://66.media.tumblr.com/2067cf7edece1aa29422d705e67741f5/72cdabe32f0c4027-e8/s540x810/856fce6022a2d2a1c39621d4d05c402760b970e1.jpg">
+                        <img
+                            src="https://66.media.tumblr.com/3efc7bc592fb91a91a929a6e9888cfb4/72cdabe32f0c4027-35/s540x810/0d5fb066ee7cc74e2429990b210fbd64d681e5ed.jpg">
+                    </div>
+                    <div class="middle"><div class="title">
+                            <h3>Gogo's first house of her own</h3>
+                            Year: 2020 <br>
+                            Type: digital images
+                        </div></div></a>
+
+                <a
+                    href="https://66.media.tumblr.com/26373e486780293e8c5077ce7bedd067/tumblr_njz895GIqi1s475keo1_400.gifv"
+                    target="_blank"><img class="image"
+                        src="https://66.media.tumblr.com/26373e486780293e8c5077ce7bedd067/tumblr_njz895GIqi1s475keo1_400.gifv"><div
+                        class="middle"><div class="title">
+                            <h3>How/where to sleep</h3>
+                            Year: 2017 <br>
+                            Type: digital image / gif
+                        </div></div></a>
+                <div class="images" style="width:540px;margin:50px;">
+                    <iframe
+                        src="https://drive.google.com/file/d/1A6r6jLf9XnXpZmld2sI8t3BhZS-EF7DT/preview"
+                        width="100%" height="600"></iframe>
+                </div>
+                <div class="images text"
+                    style="width:620px;height:710px;margin:10px;">
+                    <iframe style="width:100%;height:100%;"
+                        src="https://editor.p5js.org/KaterinaMagarini/embed/_gEMxCPA"></iframe>
+                </div>
+
+                <a href="https://magarini.itch.io/you-cant-survive-on-ice-cream"
+                    target="_blank"><img class="image"
+                        src="https://64.media.tumblr.com/dd51afa4ed4539996fa740ca87f62e90/c95728c42f010541-b3/s540x810/411f2d198cd57b2fb7f8b3228583b10665d8dff7.png"><div
+                        class="middle"><div class="title">
+                            <h3>You can't survive on ice cream</h3>
+                            Year: 2020 <br>
+                            Type: game
+                        </div></div></a>
+                <a href="https://magarini.github.io/neapolis/" target="_blank"
+                    style="display:flex;flex-direction: column;justify-content: space-around;"><img
+                        class="image"
+                        src="https://64.media.tumblr.com/bf95ce62310c1e42ebf75cac0ea8f24f/cc57c045af1178a0-2b/s540x810/d18f59094d527bfa74bf0359857d2893189a3828.png"><div
+                        class="middle"><div class="title">
+                            <h3>Neapolis</h3>
+                            Year: 2019<br>
+                            Type: interactive drawings
+                        </div></div></a>
+                <a
+                    href="https://3.bp.blogspot.com/-p1STkYT3u6s/WXs1GoQ46pI/AAAAAAAACEc/PHVrPrVUeD8XxSXLGQhRU-o6lF8x9USugCLcBGAs/s640/5.jpg"
+                    target="_blank"><img class="image"
+                        src="https://3.bp.blogspot.com/-p1STkYT3u6s/WXs1GoQ46pI/AAAAAAAACEc/PHVrPrVUeD8XxSXLGQhRU-o6lF8x9USugCLcBGAs/s640/5.jpg"><div
+                        class="middle"><div class="title">
+                            <h3>I leave in the morning</h3>
+                            Year: 2017 <br>
+                            Type: digital image
+                        </div></div></a>
+                <div class="videos" style="width:100%;margin:10px;"><iframe
+                        src="https://player.vimeo.com/video/112518492"
+                        width="100%" height="360" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <a
+                    href="https://editor.p5js.org/KaterinaMagarini/full/aQUZwUfbM"
+                    target="_blank"
+                    style="display:flex;flex-direction: column;justify-content: space-around;"><img
+                        class="image"
+                        src="https://64.media.tumblr.com/b932bc81150e10fc0a1d9f994485d494/63236b057fe967b9-9d/s540x810/479864a0a1943c8476a7a33b8cba44e0f53be8f2.jpg"><div
+                        class="middle"><div class="title">
+                            <h3>Various Days of Love</h3>
+                            Year: 2020 <br>
+                            Type: electronic literature
+                        </div></div></a>
+                <a href="https://issuu.com/katerinamagarini/docs/akaluptos"
+                    target="_blank"><img class="image"
+                        src="https://64.media.tumblr.com/3b0adefbe83409c1f9a9f41ca0931873/1f2fea34ce536e0f-e5/s540x810/882c8877ac690a5f6fbf87b61b7a462e105acc31.jpg"><div
+                        class="middle"><div class="title">
+                            <h3>Ston Akalipto</h3>
+                            Year: 2018 <br>
+                            Type: zine
+                        </div></div></a>
+
+                <iframe src="https://player.vimeo.com/video/388672853"
+                    width="640" height="360" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+                <div class="images text"
+                    style="width:380px;height:380px;margin:10px;">
+                    <iframe style="width:100%;height:100%;"
+                        src="https://1.bp.blogspot.com/-QuOwYZ76umM/XB_jGZ0VLWI/AAAAAAAACXA/loLfxNWu77YGUVqYLcN4YqsmQ6-tg-enwCLcBGAs/s1600/bed%2Bdiagram%2B1.jpg"></iframe>
+                </div>
+
+            </main>
+
+        </main>
+        <script src="blob.js"></script>
+        <!-- <script src="planck.min.js"></script>
+
+    <script src="p5.play.js"></script> -->
+
+        <!-- <script src="playSketch.js"></script> -->
+        <script src="sketch.js"></script>
+
+    </body>
+</html>

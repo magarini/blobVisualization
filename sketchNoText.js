@@ -31,9 +31,9 @@ function setup() {
   artBlob.positionY = (35 / 100) * windowHeight+ random(100);
   artBlob.color = "#EFC7C2";
   artBlob.textColor = "black";
-  artBlob.text = "art";
+  // artBlob.text = "art";
   artBlob.amplitude = 0.015;
-  artBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // artBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   artBlob.initialRadius = artBlob.radius;
   artBlob.scaledRadius = 1.2 * artBlob.radius;
 
@@ -43,9 +43,9 @@ function setup() {
   techBlob.positionY = (68 / 100) * windowHeight+ random(100);
   techBlob.color = "#9DBBAE";
   techBlob.textColor = "black";
-  techBlob.text = "tech";
+  // techBlob.text = "tech";
   techBlob.amplitude = 0.03;
-  techBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // techBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   techBlob.initialRadius = techBlob.radius;
   techBlob.scaledRadius = 1.2 * techBlob.radius;
 
@@ -55,9 +55,9 @@ function setup() {
   designBlob.positionY = (3 * windowHeight) / 6+ random(100);
   designBlob.color = "#FFE5D4";
   designBlob.textColor = "black";
-  designBlob.text = "design";
+  // designBlob.text = "design";
   designBlob.amplitude = 0.06;
-  designBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // designBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   designBlob.initialRadius = designBlob.radius;
   designBlob.scaledRadius = 1.2 * designBlob.radius;
 
@@ -67,9 +67,9 @@ function setup() {
   gameBlob.positionY = (28 / 100) * windowHeight + random(100);
   gameBlob.color = color(191,211,193,220);
   gameBlob.textColor = "black";
-  gameBlob.text = "games";
+  // gameBlob.text = "games";
   gameBlob.amplitude = random(0.033);
-  gameBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // gameBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   gameBlob.initialRadius = gameBlob.radius;
   gameBlob.scaledRadius = 1.2 * gameBlob.radius;
 
@@ -79,9 +79,9 @@ function setup() {
   illustrationBlob.positionY = (40 / 100) * windowHeight + random(100);
   illustrationBlob.color = color(191,211,193,220);
   illustrationBlob.textColor = "black";
-  illustrationBlob.text = "illustrations";
+  // illustrationBlob.text = "illustrations";
   illustrationBlob.amplitude = random(0.033);
-  illustrationBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // illustrationBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   illustrationBlob.initialRadius = illustrationBlob.radius;
   illustrationBlob.scaledRadius = 1.2 * illustrationBlob.radius;
 
@@ -91,9 +91,9 @@ function setup() {
   netArtBlob.positionY = (3 * windowHeight) / 6+ random(100);
   netArtBlob.color = color(191,211,193,220);
   netArtBlob.textColor = "black";
-  netArtBlob.text = "net art";
+  // netArtBlob.text = "net art";
   netArtBlob.amplitude = random(0.033);
-  netArtBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // netArtBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   netArtBlob.initialRadius = netArtBlob.radius;
   netArtBlob.scaledRadius = 1.2 * netArtBlob.radius;
 
@@ -103,9 +103,9 @@ function setup() {
   webDesignBlob.positionY = (65 / 100) * windowHeight+ random(100);
   webDesignBlob.color = color(191,211,193,220);
   webDesignBlob.textColor = "black";
-  webDesignBlob.text = "web design";
+  // webDesignBlob.text = "web design";
   webDesignBlob.amplitude = random(0.033);
-  webDesignBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // webDesignBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   webDesignBlob.initialRadius = webDesignBlob.radius;
   webDesignBlob.scaledRadius = 1.2 * webDesignBlob.radius;
 
@@ -115,9 +115,9 @@ function setup() {
   developmentBlob.positionY = (75 / 100) * windowHeight+ random(100);
   developmentBlob.color = color(191,211,193,220);
   developmentBlob.textColor = "black";
-  developmentBlob.text = "development";
+  // developmentBlob.text = "development";
   developmentBlob.amplitude = random(0.033);
-  developmentBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // developmentBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   developmentBlob.initialRadius = developmentBlob.radius;
   developmentBlob.scaledRadius = 1.2 * developmentBlob.radius;
 
@@ -127,9 +127,9 @@ function setup() {
   installationsBlob.positionY = (20 / 100) * windowHeight+ random(100);
   installationsBlob.color = color(191,211,193,220);
   installationsBlob.textColor = "black";
-  installationsBlob.text = "installations";
+  // installationsBlob.text = "installations";
   installationsBlob.amplitude = random(0.033);
-  installationsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // installationsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   installationsBlob.initialRadius = installationsBlob.radius;
   installationsBlob.scaledRadius = 1.2 * installationsBlob.radius;
 
@@ -139,9 +139,9 @@ function setup() {
   movingImageBlob.positionY = (4 * windowHeight) / 10+ random(100);
   movingImageBlob.color = color(191,211,193,220);
   movingImageBlob.textColor = "black";
-  movingImageBlob.text = "movingImage";
+  // movingImageBlob.text = "movingImage";
   movingImageBlob.amplitude = random(0.033);
-  movingImageBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // movingImageBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   movingImageBlob.initialRadius = movingImageBlob.radius;
   movingImageBlob.scaledRadius = 1.2 * movingImageBlob.radius;
 
@@ -151,9 +151,9 @@ function setup() {
   creativeCodingBlob.positionY = (55 / 100) * windowHeight;
   creativeCodingBlob.color = color(191,211,193,220);
   creativeCodingBlob.textColor = "black";
-  creativeCodingBlob.text = "creativeCoding";
+  // creativeCodingBlob.text = "creativeCoding";
   creativeCodingBlob.amplitude = random(0.033);
-  creativeCodingBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // creativeCodingBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   creativeCodingBlob.initialRadius = creativeCodingBlob.radius;
   creativeCodingBlob.scaledRadius = 1.2 * creativeCodingBlob.radius;
 
@@ -163,9 +163,9 @@ function setup() {
   threeDGraphicsBlob.positionY = (68 / 100) * windowHeight;
   threeDGraphicsBlob.color = color(191,211,193,220);
   threeDGraphicsBlob.textColor = "black";
-  threeDGraphicsBlob.text = "3D graphics";
+  // threeDGraphicsBlob.text = "3D graphics";
   threeDGraphicsBlob.amplitude = random(0.033);
-  threeDGraphicsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  // threeDGraphicsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
   threeDGraphicsBlob.initialRadius = threeDGraphicsBlob.radius;
   threeDGraphicsBlob.scaledRadius = 1.2 * threeDGraphicsBlob.radius;
 }
