@@ -33,7 +33,7 @@ function setup() {
   artBlob.textColor = "black";
   artBlob.text = "art";
   artBlob.amplitude = 0.015;
-  artBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  artBlob.url = "art.html";
   artBlob.initialRadius = artBlob.radius;
   artBlob.scaledRadius = 1.2 * artBlob.radius;
 
