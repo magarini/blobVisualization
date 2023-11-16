@@ -65,10 +65,12 @@ class Blobbo {
 
   clicked() {
     if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius) {
-
+      // for(let i=0;i<100;i++){
+      //   this.radius=this.radius+20;
+      //   console.log(this.radius)
+      // }
       // this.radius=this.radius+200;
         // function scaleBlob(radius){
-        //   radius=radius+20;
         //   console.log(radius)
         //   return radius;
         // }
@@ -76,15 +78,11 @@ class Blobbo {
         //   scaleBlob,100,this.radius)
         //   this.radius=scaleBlob;
 
-
-      function pageTransition(url){
-        window.open(url, "_self");
-        console.log(url);
-      }
-
-      setTimeout(
-        pageTransition,0,this.url);
-      console.log("clickedInside")
+        let link=this.url
+        setTimeout(function () {
+          window.location.href = link;
+      }, 500);
+      console.log('clickeddd')
     }
   }
 }
