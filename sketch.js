@@ -45,7 +45,7 @@ function setup() {
   techBlob.textColor = "black";
   techBlob.text = "tech";
   techBlob.amplitude = 0.03;
-  techBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  techBlob.url = "technology.html";
   techBlob.initialRadius = techBlob.radius;
   techBlob.scaledRadius = 1.2 * techBlob.radius;
 
@@ -129,7 +129,7 @@ function setup() {
   installationsBlob.textColor = "black";
   installationsBlob.text = "installations";
   installationsBlob.amplitude = random(0.033);
-  installationsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  installationsBlob.url = "installations.html";
   installationsBlob.initialRadius = installationsBlob.radius;
   installationsBlob.scaledRadius = 1.2 * installationsBlob.radius;
 
