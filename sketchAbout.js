@@ -27,7 +27,7 @@ function setup() {
 
   artBlob = new Blobbo();
   artBlob.radius = windowWidth / 7;
-  artBlob.positionX = windowWidth / 3 + random(100);
+  artBlob.positionX = windowWidth-(windowWidth / 3 + random(100));
   artBlob.positionY = (35 / 100) * windowHeight+ random(100);
   artBlob.color = "#EFC7C2";
   artBlob.textColor = "black";
@@ -39,7 +39,7 @@ function setup() {
 
   techBlob = new Blobbo();
   techBlob.radius = windowWidth / 8;
-  techBlob.positionX = windowWidth / 3+ random(100);
+  techBlob.positionX =  windowWidth-(windowWidth / 3+ random(100));
   techBlob.positionY = (68 / 100) * windowHeight+ random(100);
   techBlob.color = "#9DBBAE";
   techBlob.textColor = "black";
@@ -51,7 +51,7 @@ function setup() {
 
   designBlob = new Blobbo();
   designBlob.radius = windowWidth / 8;
-  designBlob.positionX = (4 * windowWidth) / 7+ random(100);
+  designBlob.positionX =  windowWidth-((4 * windowWidth) / 7+ random(100));
   designBlob.positionY = (3 * windowHeight) / 6+ random(100);
   designBlob.color = "#FFE5D4";
   designBlob.textColor = "black";
@@ -63,7 +63,7 @@ function setup() {
 
   gameBlob = new Blobbo();
   gameBlob.radius = windowWidth / 20;
-  gameBlob.positionX = windowWidth / 2 + random(100);
+  gameBlob.positionX =windowWidth-( windowWidth / 2 + random(100));
   gameBlob.positionY = (28 / 100) * windowHeight + random(100);
   gameBlob.color = color(191,211,193,220);
   gameBlob.textColor = "black";
@@ -75,7 +75,7 @@ function setup() {
 
   illustrationBlob = new Blobbo();
   illustrationBlob.radius = windowWidth / 20;
-  illustrationBlob.positionX = (55 / 100) * windowWidth + random(100);
+  illustrationBlob.positionX = windowWidth-((55 / 100) * windowWidth + random(100));
   illustrationBlob.positionY = (40 / 100) * windowHeight + random(100);
   illustrationBlob.color = color(191,211,193,220);
   illustrationBlob.textColor = "black";
@@ -87,7 +87,7 @@ function setup() {
 
   netArtBlob = new Blobbo();
   netArtBlob.radius = windowWidth / 20;
-  netArtBlob.positionX = windowWidth / 6+ random(100);
+  netArtBlob.positionX = windowWidth-(windowWidth / 6+ random(100));
   netArtBlob.positionY = (3 * windowHeight) / 6+ random(100);
   netArtBlob.color = color(191,211,193,220);
   netArtBlob.textColor = "black";
@@ -99,7 +99,7 @@ function setup() {
 
   webDesignBlob = new Blobbo();
   webDesignBlob.radius = windowWidth / 20;
-  webDesignBlob.positionX = (60 / 100) * windowWidth+ random(100);
+  webDesignBlob.positionX = windowWidth-((60 / 100) * windowWidth+ random(100));
   webDesignBlob.positionY = (65 / 100) * windowHeight+ random(100);
   webDesignBlob.color = color(191,211,193,220);
   webDesignBlob.textColor = "black";
@@ -111,7 +111,7 @@ function setup() {
 
   developmentBlob = new Blobbo();
   developmentBlob.radius = windowWidth / 20;
-  developmentBlob.positionX = (50 / 100) * windowWidth+ random(100);
+  developmentBlob.positionX = windowWidth-((50 / 100) * windowWidth+ random(100));
   developmentBlob.positionY = (75 / 100) * windowHeight+ random(100);
   developmentBlob.color = color(191,211,193,220);
   developmentBlob.textColor = "black";
@@ -123,7 +123,7 @@ function setup() {
 
   installationsBlob = new Blobbo();
   installationsBlob.radius = windowWidth / 20;
-  installationsBlob.positionX = (3 * windowWidth) / 20 + random(100);
+  installationsBlob.positionX =windowWidth-( (3 * windowWidth) / 20 + random(100));
   installationsBlob.positionY = (20 / 100) * windowHeight+ random(100);
   installationsBlob.color = color(191,211,193,220);
   installationsBlob.textColor = "black";
@@ -135,7 +135,7 @@ function setup() {
 
   movingImageBlob = new Blobbo();
   movingImageBlob.radius = windowWidth / 20;
-  movingImageBlob.positionX = windowWidth / 10+ random(100);
+  movingImageBlob.positionX = windowWidth-(windowWidth / 10+ random(100));
   movingImageBlob.positionY = (4 * windowHeight) / 10+ random(100);
   movingImageBlob.color = color(191,211,193,220);
   movingImageBlob.textColor = "black";
@@ -147,7 +147,7 @@ function setup() {
 
   creativeCodingBlob = new Blobbo();
   creativeCodingBlob.radius = windowWidth / 20;
-  creativeCodingBlob.positionX = windowWidth / 10;
+  creativeCodingBlob.positionX =windowWidth-( windowWidth / 10);
   creativeCodingBlob.positionY = (55 / 100) * windowHeight;
   creativeCodingBlob.color = color(191,211,193,220);
   creativeCodingBlob.textColor = "black";
@@ -159,7 +159,7 @@ function setup() {
 
   threeDGraphicsBlob = new Blobbo();
   threeDGraphicsBlob.radius = windowWidth / 20;
-  threeDGraphicsBlob.positionX = (15 / 100) * windowWidth;
+  threeDGraphicsBlob.positionX = windowWidth-((15 / 100) * windowWidth);
   threeDGraphicsBlob.positionY = (68 / 100) * windowHeight;
   threeDGraphicsBlob.color = color(191,211,193,220);
   threeDGraphicsBlob.textColor = "black";
@@ -201,20 +201,20 @@ function draw() {
   threeDGraphicsBlob.mouseOver();
 }
 
-// function mousePressed() {
-//   artBlob.clicked();
-//   techBlob.clicked();
-//   designBlob.clicked();
-//   gameBlob.clicked();
-//   illustrationBlob.clicked();
-//   netArtBlob.clicked();
-//   webDesignBlob.clicked();
-//   developmentBlob.clicked();
-//   installationsBlob.clicked();
-//   movingImageBlob.clicked();
-//   creativeCodingBlob.clicked();
-//   threeDGraphicsBlob.clicked();
-// }
+function mousePressed() {
+  artBlob.clicked();
+  techBlob.clicked();
+  designBlob.clicked();
+  gameBlob.clicked();
+  illustrationBlob.clicked();
+  netArtBlob.clicked();
+  webDesignBlob.clicked();
+  developmentBlob.clicked();
+  installationsBlob.clicked();
+  movingImageBlob.clicked();
+  creativeCodingBlob.clicked();
+  threeDGraphicsBlob.clicked();
+}
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

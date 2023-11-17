@@ -30,8 +30,8 @@ class Blobbo {
       let angle = (TWO_PI * i) / this.nbPoints;
       let r =
         this.radius +
-        this.wave(i, (mouseX * this.amplitude)/2, 3, 1) +
-        this.wave(i, (mouseY * this.amplitude)/2, 7, -1) +
+        this.wave(i, (mouseX * this.amplitude) / 2, 3, 1) +
+        this.wave(i, (mouseY * this.amplitude) / 2, 7, -1) +
         this.wave(i, 2, 5, 0) +
         this.wave(i, 2, 3, -4);
 
@@ -53,8 +53,8 @@ class Blobbo {
   mouseOver() {
     if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius) {
       this.radius = this.scaledRadius;
-      this.positionX=this.positionX+random(-1,1);
-      this.positionY=this.positionY+random(-1,1);
+      this.positionX = this.positionX + random(-1, 1);
+      this.positionY = this.positionY + random(-1, 1);
 
       cursor(HAND);
     } else {
@@ -63,26 +63,28 @@ class Blobbo {
     }
   }
 
+  scaleRadius(){
+    frameRate(5)
+
+    var startTime = Date.now();
+      while (Date.now() - startTime < 200) {
+       this.radius=this.radius+200;
+       console.log(this.radius)
+      }
+  }
+
   clicked() {
     if (dist(mouseX, mouseY, this.positionX, this.positionY) < this.radius) {
-      // for(let i=0;i<100;i++){
-      //   this.radius=this.radius+20;
-      //   console.log(this.radius)
-      // }
-      // this.radius=this.radius+200;
-        // function scaleBlob(radius){
-        //   console.log(radius)
-        //   return radius;
-        // }
-        // setInterval(
-        //   scaleBlob,100,this.radius)
-        //   this.radius=scaleBlob;
 
-        let link=this.url
-        setTimeout(function () {
-          window.location.href = link;
-      }, 500);
-      console.log('clickeddd')
+      let link = this.url;
+      setTimeout(function () {
+        window.location.href = link;
+      }, 200);
+
+      this.scaleRadius();
+
+
+      console.log("clickeddd");
     }
   }
 }

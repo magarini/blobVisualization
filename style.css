@@ -25,6 +25,21 @@ canvas {
   width: 100% !important;
 }
 
+/* .about canvas{
+  width:50%!important;
+  height:50%!important;
+  right: 0;
+  bottom: 0;
+  left:50%;
+  top:50%;
+  z-index: -1;
+
+} */
+
+#p5_loading{
+  display:none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -35,7 +50,15 @@ nav {
   width: 100%;
   box-sizing: border-box;
   z-index: 2;
-  background-color: white;
+  background-color: transparent;
+  &::after{
+    background-color: white;
+
+  }
+}
+
+.home nav{
+  background: transparent;
 }
 
 nav a {
@@ -105,6 +128,15 @@ a.active {
   color: #fff;
   font-weight: 500;
 }
+
+/* .art{
+  background:#EFC7C2 ;
+  &::after {
+    background-color: white;
+  }
+} */
+
+
 
 .art .filters a {
   border: none;
@@ -248,6 +280,11 @@ align-self: stretch;  */
 
 .largeScale {
   grid-column: 2 / -1;
+}
+
+.projectContainer iframe{
+  width:100%;
+  height:450px;
 }
 
 .art canvas {

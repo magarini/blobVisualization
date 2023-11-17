@@ -199,6 +199,10 @@ function draw() {
   movingImageBlob.mouseOver();
   creativeCodingBlob.mouseOver();
   threeDGraphicsBlob.mouseOver();
+
+  // if(mouseIsPressed===true){
+  //   artBlob.scaleRadius();
+  // }
 }
 
 function mousePressed() {
