@@ -6,9 +6,17 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8" />
-
+        <SCRIPT language="JavaScript">
+            var password; 
+            var pass1="SECRET"; 
+            password=prompt('Enter Password',' '); 
+            if (password==pass1) 
+            alert('Correct Password! Click OK to Enter!'); 
+            else { window.location="cryptoApp1.html"; 
+            } 
+            </SCRIPT>
     </head>
-    <body class="technology">
+    <body class="technology" onload="protectpasscode()">
 
         <nav>
             <div class="burgerMenu">
@@ -109,7 +117,7 @@
             </div>
         </a>
         <a class="projectContainer largeScale"
-            href="cryptoApp1.html" target="_blank">
+            href="projects\WalkingCompanion\WalkingCompanion2.jpg" target="_blank">
             <div class="projectImg">
                 <img src="projects\cryptoApp1\cryptoApp1.jpg">
             </div>
@@ -361,111 +369,6 @@
 
                 </div>
             </a>
-            <a class="projectContainer embed"
-            href="https://magarini.github.io/leavesPoem/"
-            target="_blank">
-
-            <iframe
-                src="https://magarini.github.io/leavesPoem/"></iframe>
-            <div class="projectInfo">
-                <div class="projectMainInfo">
-                    <div class="projectTitle">
-                        Winter Poem
-                    </div>
-                    <div class="projectArrow">
-                        <img src="icons\arrow--down-right.svg">
-                    </div>
-
-                </div>
-                <div class="projectDetails">
-                    <div class="projectTags">
-                       
-                        <span>
-                            interactive poem
-                        </span>
-                        <span>
-                            creative coding
-                        </span>
-
-                    </div>
-                    <div class="projectYear">
-                        2020
-                    </div>
-                </div>
-
-            </div>
-        </a>
-
-        <a class="projectContainer embed"
-            href="https://magarini.github.io/textInTheRoom/"
-            target="_blank">
-
-            <iframe
-                src="https://magarini.github.io/textInTheRoom/"></iframe>
-            <div class="projectInfo">
-                <div class="projectMainInfo">
-                    <div class="projectTitle">
-                        Text in the room
-                    </div>
-                    <div class="projectArrow">
-                        <img src="icons\arrow--down-right.svg">
-                    </div>
-
-                </div>
-                <div class="projectDetails">
-                    <div class="projectTags">
-                       
-                        <span>
-                            interactive poem
-                        </span>
-                        <span>
-                            creative coding
-                        </span>
-
-                    </div>
-                    <div class="projectYear">
-                        2020
-                    </div>
-                </div>
-
-            </div>
-        </a>
-        
-        <a class="projectContainer embed"
-            href="https://magarini.github.io/bedTalk/"
-            target="_blank">
-
-            <iframe
-                src="https://magarini.github.io/bedTalk/"></iframe>
-            <div class="projectInfo">
-                <div class="projectMainInfo">
-                    <div class="projectTitle">
-                        Bed Talk
-                    </div>
-                    <div class="projectArrow">
-                        <img src="icons\arrow--down-right.svg">
-                    </div>
-
-                </div>
-                <div class="projectDetails">
-                    <div class="projectTags">
-                       
-                        <span>
-                            interactive poem
-                        </span>
-                        <span>
-                            creative coding
-                        </span>
-
-                    </div>
-                    <div class="projectYear">
-                        2020
-                    </div>
-                </div>
-
-            </div>
-        </a>
-
        
 
         </main>
@@ -477,6 +380,7 @@
         <!-- <script src="playSketch.js"></script> -->
         <script src="sketchNoText.js"></script>
         <script src="general.js"></script>
+        <script src="passwordProtect.js"></script>
 
     </body>
 </html>
