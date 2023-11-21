@@ -279,12 +279,20 @@ align-self: stretch;  */
 }
 
 .largeScale {
-  grid-column: 2 / -1;
+  /* grid-column: 2 / -1; */
+  grid-column:  span 2;
 }
 
 .projectContainer iframe{
   width:100%;
-  height:450px;
+  min-height: 450px;
+  flex: 2;
+
+}
+
+.projectContainer.embed{
+  background-color: #E3ECE4;
+  padding:16px;
 }
 
 .art canvas {
@@ -299,6 +307,7 @@ align-self: stretch;  */
 .technology .projectImg {
   height: 650px;
   width: 100%;
+  flex: 2;
 }
 
 .about main {
@@ -322,7 +331,7 @@ align-self: stretch;  */
 
 @media only screen and (min-width: 700px) and (max-width: 1280px) {
   main {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr))!important;
     gap: 80px;
   }
 }
