@@ -93,7 +93,7 @@ function setup() {
   netArtBlob.textColor = "black";
   netArtBlob.text = "net art";
   netArtBlob.amplitude = random(0.033);
-  netArtBlob.url = "art.html";
+  netArtBlob.url = "netArt.html";
   netArtBlob.initialRadius = netArtBlob.radius;
   netArtBlob.scaledRadius = 1.2 * netArtBlob.radius;
 
@@ -105,7 +105,7 @@ function setup() {
   webDesignBlob.textColor = "black";
   webDesignBlob.text = "web design";
   webDesignBlob.amplitude = random(0.033);
-  webDesignBlob.url = "design.html";
+  webDesignBlob.url = "webdesign.html";
   webDesignBlob.initialRadius = webDesignBlob.radius;
   webDesignBlob.scaledRadius = 1.2 * webDesignBlob.radius;
 
@@ -153,7 +153,7 @@ function setup() {
   creativeCodingBlob.textColor = "black";
   creativeCodingBlob.text = "creativeCoding";
   creativeCodingBlob.amplitude = random(0.033);
-  creativeCodingBlob.url = "technology";
+  creativeCodingBlob.url = "creativecoding.html";
   creativeCodingBlob.initialRadius = creativeCodingBlob.radius;
   creativeCodingBlob.scaledRadius = 1.2 * creativeCodingBlob.radius;
 

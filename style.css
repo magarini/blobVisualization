@@ -193,6 +193,11 @@ align-self: stretch;  */
 
 }
 
+.fewRows main{
+  grid-template-rows: repeat(2, minmax(auto, 1fr));
+
+}
+
 .projectContainer {
   display: flex;
   flex-direction: column;
