@@ -362,6 +362,20 @@ iframe.fullWidth{
   display:flex;
 }
 
+.contact{
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between ;
+  margin:24px 0 0;
+}
+
+.socialMedia a{
+  color:black;
+  margin:8px;
+  text-decoration:none ;
+
+}
+
 @media only screen and (min-width: 700px) and (max-width: 1280px) {
   main {
     grid-template-columns: repeat(2, minmax(200px, 1fr)) !important;
