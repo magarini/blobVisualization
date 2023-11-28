@@ -43,7 +43,7 @@ function setup() {
   techBlob.positionY = (68 / 100) * windowHeight+ random(100);
   techBlob.color = "#9DBBAE";
   techBlob.textColor = "black";
-  techBlob.text = "tech";
+  techBlob.text = "technology";
   techBlob.amplitude = 0.03;
   techBlob.url = "technology.html";
   techBlob.initialRadius = techBlob.radius;
