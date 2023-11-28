@@ -10,6 +10,7 @@ class Blobbo {
     this.text;
     this.amplitude;
     this.url;
+    this.fontSize=24;
 
     this.scaledRadius;
     this.initialRadius;
@@ -46,7 +47,7 @@ class Blobbo {
     this.time += 0.01;
     fill(this.textColor);
     textAlign(CENTER);
-    textSize(16);
+    textSize(this.fontSize);
     text(this.text, this.positionX, this.positionY);
   }
 

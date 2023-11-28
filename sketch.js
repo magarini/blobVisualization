@@ -36,6 +36,7 @@ function setup() {
   artBlob.url = "art.html";
   artBlob.initialRadius = artBlob.radius;
   artBlob.scaledRadius = 1.2 * artBlob.radius;
+  artBlob.fontSize=40;
 
   techBlob = new Blobbo();
   techBlob.radius = windowWidth / 8;
@@ -48,6 +49,8 @@ function setup() {
   techBlob.url = "technology.html";
   techBlob.initialRadius = techBlob.radius;
   techBlob.scaledRadius = 1.2 * techBlob.radius;
+  techBlob.fontSize=40;
+
 
   designBlob = new Blobbo();
   designBlob.radius = windowWidth / 8;
@@ -60,6 +63,7 @@ function setup() {
   designBlob.url = "design.html";
   designBlob.initialRadius = designBlob.radius;
   designBlob.scaledRadius = 1.2 * designBlob.radius;
+  designBlob.fontSize=40;
 
   gameBlob = new Blobbo();
   gameBlob.radius = windowWidth / 20;

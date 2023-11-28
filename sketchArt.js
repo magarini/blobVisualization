@@ -25,7 +25,7 @@ function setup() {
   artBlob = new Blobbo();
   artBlob.radius = windowWidth / 7;
   artBlob.positionX = windowWidth / 3 + random(100);
-  artBlob.positionY = (35 / 100) * windowHeight+ random(100);
+  artBlob.positionY = (42 / 100) * windowHeight+ random(20);
   artBlob.color = "#f9eeed";
   artBlob.textColor = "black";
   // artBlob.text = "art";
@@ -38,7 +38,7 @@ function setup() {
   gameBlob = new Blobbo();
   gameBlob.radius = windowWidth / 20;
   gameBlob.positionX = windowWidth / 2 + random(100);
-  gameBlob.positionY = (28 / 100) * windowHeight + random(100);
+  gameBlob.positionY = (47 / 100) * windowHeight + random(20);
   gameBlob.color = "#f9eeed";
   gameBlob.textColor = "black";
   // gameBlob.text = "games";
