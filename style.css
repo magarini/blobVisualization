@@ -239,6 +239,7 @@ align-self: stretch;  */
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  flex:1;
 }
 
 .projectMainInfo {
@@ -379,20 +380,64 @@ iframe.fullWidth{
 h1{
   font-size:64px;
   font-weight: 500;
+  margin:0;
 }
 
-/* .projectPage main{
-  display:flex;
-  flex-direction: column;
-} */
-.projectPage .projectTitle{
+/* projectPage */
+
+.projectPage main{
+ display:flex;
+ flex-direction: column;
+ gap:24px;
+}
+.projectPage .projectTitleContainer{
   font-size:64px;
   font-weight: 500;
+  display:flex;
+  align-items: center;
+  gap:8px;
+  margin:96px 0 48px;
+}
+
+.projectPage .projectTitleContainer img{
+  height:56px;
 }
 
 .projectPage .largeScale{
   width:100%;
   height:auto;
+}
+
+.projectPage .twoCols{
+  display:flex;
+  gap: 24px;
+}
+
+.twoCols img{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectPage .projectInfo{
+  flex:2;
+  justify-content: flex-end;
+}
+
+.projectInfo p{
+margin:80px;
+max-width:600px;
+
+}
+
+.projectPage .infoType{
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
+  width:100%;
+}
+
+.projectPage .infoTitle{
+font-weight: 600;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1440px) {
