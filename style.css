@@ -189,12 +189,12 @@ align-self: stretch;  */
 }
 
 .art main{
-  grid-template-rows: repeat(5, minmax(400px, 1fr));
+  grid-template-rows: repeat(5, minmax(600px, 1fr));
 
 }
 
 .fewRows main{
-  grid-template-rows: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: repeat(2, minmax(600px, 1fr));
 
 }
 
