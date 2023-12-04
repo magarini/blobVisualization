@@ -440,6 +440,42 @@ max-width:600px;
 font-weight: 600;
 }
 
+.projectPage .sticker{
+  z-index:3;
+  position:absolute!important;
+  top:auto!important;
+  left:auto!important;
+  bottom:32px!important;
+  right:32px!important;
+  width:200px!important;
+  height:200px!important;
+  background:transparent;
+  border:none;
+  text-decoration: none;
+  color:black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticker p{
+  margin:0;
+  font-size:24px;
+}
+
+
+.projectPage canvas{
+  /* z-index:3;
+  position:absolute!important;
+  top:auto!important;
+  left:auto!important;
+  bottom:32px!important;
+  right:32px!important; */
+  width:100%!important;
+  height:100%!important;
+}
+
 @media only screen and (min-width: 700px) and (max-width: 1440px) {
   main {
     grid-template-columns: repeat(2, minmax(200px, 1fr)) !important;
