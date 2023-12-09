@@ -10,13 +10,13 @@ function toggleBurger() {
     if (menu.style.display === "flex") {
       menu.style.display = "none";
       navBar.style.background="transparent"
-      x.innerHTML='<img src="icons/menu.svg">';
+      x.innerHTML='<img src="/icons/menu.svg">';
       console.log('innerHtml',x.innerHTML)
 
     } else {
       menu.style.display = "flex";
       // navBar.style.background="#F2F2F2"
-      x.innerHTML='<img src="icons/close.svg">';
+      x.innerHTML='<img src="/icons/close.svg">';
 
 
     }
