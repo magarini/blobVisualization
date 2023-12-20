@@ -82,7 +82,7 @@ class Blobbo {
         window.location.href = link;
       }, 200);
 
-      this.scaleRadius();
+      // this.scaleRadius();
 
 
       console.log("clickeddd");
