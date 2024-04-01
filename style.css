@@ -50,14 +50,16 @@ nav {
   width: 100%;
   box-sizing: border-box;
   z-index: 2;
-  background-color: transparent;
+  background-color: white;
   &::after {
     background-color: white;
   }
 }
 
-.home nav {
-  background: transparent;
+
+
+.home .logo{
+  visibility: hidden;
 }
 
 nav a {
@@ -126,11 +128,20 @@ a.active {
   bottom:24px;
   left:24px;
 }
+.intro h1{
+  background:white;
+  margin:4px;
+  padding:8px;
+
+}
 
 .intro h2{
-  margin:0;
+  margin:4px;
   font-weight: 500;
   font-size:32px;
+  background:white;
+  padding:8px;
+
 }
 
 main {
@@ -159,6 +170,11 @@ align-self: stretch;  */
   grid-template-rows: repeat(2, minmax(600px, 1fr));
 
 } */
+
+.sectionIntro{
+  max-width: 700px;
+  margin:16px 24px;
+}
 
 .projectContainer {
   display: flex;
@@ -306,6 +322,12 @@ iframe.fullWidth{
 .about main p {
   max-width: 700px;
   margin: 8px;
+}
+
+.aboutText{
+  background-color: white;
+  padding:8px;
+  max-width:700px;
 }
 
 /* .installations main {
