@@ -13,12 +13,6 @@ let elementIndex=0;
 
 
 
-let message = "breaks into a thousand pieces",
-  font,
-  bounds, // holds x, y, w, h of the text's bounding box
-  fontsize = 24,
-  x,
-  y; // x and y coordinates of the text
 
 
 

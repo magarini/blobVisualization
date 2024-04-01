@@ -102,6 +102,7 @@ a.active {
   flex-wrap: wrap;
   gap: 8px;
   align-self: stretch;
+  background-color: white;
 }
 
 .filters a {
@@ -115,7 +116,7 @@ a.active {
   color: #141414;
   text-decoration: none;
   font-size: 16px;
-  background-color: white;
+  
 }
 
 .filters a.active {
@@ -128,12 +129,16 @@ a.active {
   position:absolute;
   bottom:24px;
   left:24px;
+  max-width: calc(100vw - 40px);  
+  box-sizing: border-box;
+
 }
 .intro h1{
   background:white;
   margin:4px;
   padding:8px;
-
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .intro h2{
@@ -142,6 +147,8 @@ a.active {
   font-size:32px;
   background:white;
   padding:8px;
+  max-width: 100%;
+  box-sizing: border-box;
 
 }
 
@@ -360,6 +367,9 @@ iframe.fullWidth{
   flex-direction: column;
   justify-content:space-between ;
   margin:24px 0 0;
+  background-color: white;
+  padding:8px;
+  max-width: 700px;
 }
 
 .socialMedia a{
@@ -494,14 +504,14 @@ button{
 
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1440px) {
+@media  screen and (min-width: 700px) and (max-width: 1440px) {
   main {
     grid-template-columns: repeat(3, minmax(200px, 1fr)) !important;
     gap: 80px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media  screen and (max-width: 700px) {
   main {
     display: flex;
     flex-direction: column;
