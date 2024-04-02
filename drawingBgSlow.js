@@ -2,20 +2,22 @@ let windowAspect;
 let elementW,elementH;
 let elements=[];
 let elementIndex=0;
+var r;
+var g;
 
 function preload() {
   let element0=loadImage("backgrounds/Paint Layer 6.PNG");
   let element1=loadImage("backgrounds/Paint Layer 39.PNG");
   let element2=loadImage("backgrounds/Paint Layer 45.PNG");
-  let element3=loadImage("backgrounds/Paint Layer 48.PNG");
+  // let element3=loadImage("backgrounds/Paint Layer 48.PNG");
   let element4=loadImage("backgrounds/Paint Layer 55.PNG");
   let element5=loadImage("backgrounds/Paint Layer 2.PNG");
   let element6=loadImage("backgrounds/Paint Layer 46.PNG");
-  let element7=loadImage("backgrounds/Paint Layer 10.PNG");
-  let element8=loadImage("backgrounds/Paint Layer 9.PNG");
+  let element7=loadImage("backgrounds/Paint Layer 9.PNG");
+
   elements=[
-    element0,element1,element2,element3,element4,element5,
-    element6,element7,element8];
+    element0,element1,element2,element4,element5,
+    element6,element7];
   }
 
 function setup() {
@@ -23,7 +25,9 @@ function setup() {
   windowAspect = width / height;
   image(elements[elementIndex],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
   setInterval(addelementture, 3000);
-  setInterval(restart,6000)
+  setInterval(restart,5000)
+  r = random(220,255);
+  g = random(220,255);
 }
 
 function draw() {
@@ -41,13 +45,15 @@ function draw() {
   image(elements[elementIndex],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
   }
   noStroke()
-  fill(204,255,255)
+  fill(r,g,255)
   ellipse(mouseX,mouseY,200)
 }
 
 function restart(){
 clear()
 image(elements[random(elements.length)],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
+r = random(220,255);
+g = random(220,255);
 }
 
 function addelementture(){

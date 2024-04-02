@@ -45,7 +45,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   font-size: 24px;
-  padding: 16px 24px 8px;
+  padding: 8px 24px ;
   /* position: sticky; */
   width: 100%;
   box-sizing: border-box;
@@ -102,7 +102,8 @@ a.active {
   flex-wrap: wrap;
   gap: 8px;
   align-self: stretch;
-  background-color: white;
+  position: sticky;
+  top:0;
 }
 
 .filters a {
@@ -116,7 +117,8 @@ a.active {
   color: #141414;
   text-decoration: none;
   font-size: 16px;
-  
+  background-color: white;
+
 }
 
 .filters a.active {
@@ -156,6 +158,12 @@ a.active {
   background-size: cover;
 }
 
+section{
+  height:100%;
+  overflow-y:auto;
+
+}
+
 main {
   display: grid;
   padding: 40px 24px;
@@ -169,10 +177,11 @@ align-self: stretch;  */
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   /* grid-template-rows: repeat(5, minmax(auto, 1fr)); */
   /* gap: 80px; */
-  height: 100%;
-  overflow-y: auto;
+  /* height: 100%; */
+  /* overflow-y: auto; */
   row-gap: 200px;
   column-gap: 40px;
+  overflow-x:hidden;
 }
 
 /* .art main{
@@ -186,8 +195,13 @@ align-self: stretch;  */
 } */
 
 .sectionIntro{
+  padding:64px 32px;
+  background:white;
+}
+
+.sectionIntro h2{
+  font-weight: 500;
   max-width: 700px;
-  margin:16px 24px;
 }
 
 .projectContainer {
@@ -593,6 +607,10 @@ button{
   .projectDescription p {
     margin: 24px 0;
     max-width: 600px;
+  }
+
+  .empty{
+    display:none;
   }
 
 }
