@@ -40,9 +40,9 @@ function draw() {
   imageMode(CORNER);
   image(elements[elementIndex],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
   }
-  // noStroke()
-  // fill(229,204,255)
-  // ellipse(mouseX,mouseY,200)
+  noStroke()
+  fill(204,255,255)
+  ellipse(mouseX,mouseY,200)
 }
 
 function restart(){
