@@ -1,22 +1,9 @@
 let windowAspect;
-let w, h;
-
 let elementW,elementH;
-
-
-//images
 let elements=[];
 let elementIndex=0;
 
-
-
-
-
-
-
 function preload() {
-
-
   let element0=loadImage("backgrounds/Paint Layer 6.PNG");
   let element1=loadImage("backgrounds/Paint Layer 39.PNG");
   let element2=loadImage("backgrounds/Paint Layer 45.PNG");
@@ -30,53 +17,34 @@ function preload() {
   elements=[
     element0,element1,element2,element3,element4,element5,
     element6,element7,element8];
-
   }
 
 function setup() {
-  console.log('loaded')
   createCanvas(windowWidth, windowHeight);
   windowAspect = width / height;
-
   image(elements[elementIndex],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
-
-  //timeRenewal
   setInterval(addelementture, 1000);
   setInterval(restart,8000)
 }
 
-
-
-
-
 function draw() {
-
-
-  //adding elements
   for (i=0; i<elementIndex; i++){
     let imageAspect = elements[elementIndex].width / elements[elementIndex].height;
-
-  // This code naively crops the bottom or right edge of the image as necessary. Obviously there are other ways to limit the image size.
   if (windowAspect >= imageAspect) {
-    // Our window is wider than our image, we need to constrain the height of the image
     elementW = elements[elementIndex].width;
     elementH =  elementW / windowAspect;
   } else {
-    // Our window is narrower than or image, we need to constrain the width of the image
     elementH = elements[elementIndex].height;
     elementW = elementH * windowAspect;
   }
-
   imageMode(CORNER);
   image(elements[elementIndex],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
   }
-
 }
 
 function restart(){
 clear()
 image(elements[random(elements.length)],0, 0, windowWidth, windowHeight, 0, 0, elementW, elementH);
-
 }
 
 function addelementture(){
@@ -85,9 +53,6 @@ function addelementture(){
     elementIndex=0;
   }
 }
-
-
-
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);

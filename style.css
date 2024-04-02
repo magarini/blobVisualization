@@ -149,7 +149,11 @@ a.active {
   padding:8px;
   max-width: 100%;
   box-sizing: border-box;
+}
 
+.home{
+  background-image: url("backgrounds/Paint Layer 48.PNG");
+  background-size: cover;
 }
 
 main {
@@ -506,7 +510,7 @@ button{
 
 
 
-@media  screen and (min-width: 700px) and (max-width: 1280px) {
+@media  screen and (min-width: 700px) and (max-width: 1080px) {
   main {
     grid-template-columns: repeat(2, minmax(200px, 1fr)) !important;
     gap: 80px;
