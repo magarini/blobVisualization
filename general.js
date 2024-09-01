@@ -1,22 +1,22 @@
 var menu = document.querySelector(".menu");
 var navBar=document.querySelector(".burgerMenu");
-var x=document.querySelector(".burger");
+var closeBtn=document.querySelector(".burger");
 
 
 function toggleBurger() {
 
-
+  console.log('clicked')
     
     if (menu.style.display === "flex") {
       menu.style.display = "none";
       navBar.style.background="transparent"
-      x.innerHTML='<img src="/icons/menu.svg">';
-      console.log('innerHtml',x.innerHTML)
+      closeBtn.innerHTML='<img src="/icons/menu.svg">';
+      console.log('innerHtml',closeBtn.innerHTML)
 
     } else {
       menu.style.display = "flex";
       // navBar.style.background="#F2F2F2"
-      x.innerHTML='<img src="/icons/close.svg">';
+      closeBtn.innerHTML='<img src="/icons/close.svg">';
 
 
     }
@@ -24,7 +24,9 @@ function toggleBurger() {
 
 
   function reportWindowSize() {
-   if(window.innerWidth>700){
+    console.log("screen")
+
+   if(window.innerWidth>1040){
     menu.style.display = "flex";
    }else{
     menu.style.display = "none";
@@ -35,3 +37,9 @@ function toggleBurger() {
   window.onresize = reportWindowSize;
 
   window.addEventListener("resize", reportWindowSize);
+
+
+
+
+
+  

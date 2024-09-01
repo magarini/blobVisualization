@@ -139,7 +139,7 @@ function draw() {
 
   //adding elements
   for (i=0; i<elementIndex; i++){
-    console.log('problem',elementIndex)
+    // console.log('problem',elementIndex)
     let imageAspect = elements[elementIndex].width / elements[elementIndex].height;
   // This code naively crops the bottom or right edge of the image as necessary. Obviously there are other ways to limit the image size.
   if (windowAspect >= imageAspect) {
