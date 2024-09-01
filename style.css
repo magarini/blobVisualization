@@ -6,7 +6,7 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100dvw;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
   height: 100dvh;
 }
 
@@ -45,7 +45,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   font-size: 24px;
-  padding: 16px 24px 8px;
+  padding: 8px 24px ;
   /* position: sticky; */
   width: 100%;
   box-sizing: border-box;
@@ -102,6 +102,8 @@ a.active {
   flex-wrap: wrap;
   gap: 8px;
   align-self: stretch;
+  position: sticky;
+  top:0;
 }
 
 .filters a {
@@ -110,11 +112,13 @@ a.active {
   align-items: flex-start;
   gap: 10px;
   border-radius: 36px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   /* background: #FFF; */
   color: #141414;
   text-decoration: none;
   font-size: 16px;
+  background-color: #eee4ed;
+
 }
 
 .filters a.active {
@@ -127,12 +131,16 @@ a.active {
   position:absolute;
   bottom:24px;
   left:24px;
+  max-width: calc(100vw - 40px);  
+  box-sizing: border-box;
+
 }
 .intro h1{
   background:white;
   margin:4px;
   padding:8px;
-
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .intro h2{
@@ -141,12 +149,24 @@ a.active {
   font-size:32px;
   background:white;
   padding:8px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.home{
+  background-image: url("backgrounds/Paint Layer 48.PNG");
+  background-size: cover;
+}
+
+section{
+  height:100%;
+  overflow-y:auto;
 
 }
 
 main {
   display: grid;
-  padding: 40px;
+  padding: 40px 24px;
   /* flex-direction: column;
 align-items: flex-start;
 gap: 80px;
@@ -155,10 +175,13 @@ align-self: stretch;  */
   box-sizing: border-box;
 
   grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-rows: repeat(5, minmax(auto, 1fr));
-  gap: 80px;
-  height: 100%;
-  overflow-y: scroll;
+  /* grid-template-rows: repeat(5, minmax(auto, 1fr)); */
+  /* gap: 80px; */
+  /* height: 100%; */
+  /* overflow-y: auto; */
+  row-gap: 200px;
+  column-gap: 40px;
+  overflow-x:hidden;
 }
 
 /* .art main{
@@ -172,8 +195,13 @@ align-self: stretch;  */
 } */
 
 .sectionIntro{
+  padding:64px 32px;
+  background:white;
+}
+
+.sectionIntro h2{
+  font-weight: 500;
   max-width: 700px;
-  margin:16px 24px;
 }
 
 .projectContainer {
@@ -189,7 +217,7 @@ align-self: stretch;  */
 }
 
 .projectImg {
-  height: 300px;
+  /* height: 300px; */
   width: 100%;
   /* flex: 2; */
 }
@@ -197,7 +225,7 @@ align-self: stretch;  */
 .projectImg img {
   width: 100%;
   object-fit: cover;
-  height: 100%;
+  /* height: 100%; */
 }
 
 /* .largeScale .projectImg {
@@ -217,6 +245,7 @@ align-self: stretch;  */
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  background-color: white;
 }
 
 .projectMainInfo {
@@ -226,6 +255,7 @@ align-self: stretch;  */
   align-items: center;
   align-self: stretch;
   border-bottom: 1px #141414 solid;
+  padding:0 8px;
 }
 
 .projectTitle {
@@ -237,6 +267,8 @@ align-self: stretch;  */
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  padding:0 8px;
+
 }
 .projectTeam {
   display: flex;
@@ -281,9 +313,11 @@ align-self: stretch;  */
 
 .projectContainer iframe {
   width: 100%;
-  height:100%;
+  height:300px;
   /* min-height: 450px; */
-  flex: 2;
+  /* flex: 2; */
+  border:none;
+  /* cursor:grab; */
 }
 
 
@@ -355,6 +389,9 @@ iframe.fullWidth{
   flex-direction: column;
   justify-content:space-between ;
   margin:24px 0 0;
+  background-color: white;
+  padding:8px;
+  max-width: 700px;
 }
 
 .socialMedia a{
@@ -489,9 +526,11 @@ button{
 
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1440px) {
+
+
+@media  screen and (min-width: 700px) and (max-width: 1080px) {
   main {
-    grid-template-columns: repeat(3, minmax(200px, 1fr)) !important;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)) !important;
     gap: 80px;
   }
 }
@@ -568,6 +607,10 @@ button{
   .projectDescription p {
     margin: 24px 0;
     max-width: 600px;
+  }
+
+  .empty{
+    display:none;
   }
 
 }

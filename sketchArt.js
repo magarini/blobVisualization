@@ -7,7 +7,7 @@ let illustrationBlob;
 let netArtBlob;
 
 let installationsBlob;
-let movingImageBlob;
+let animationsBlob;
 let threeDGraphics;
 
 
@@ -85,17 +85,17 @@ function setup() {
   installationsBlob.initialRadius = installationsBlob.radius;
   installationsBlob.scaledRadius =  installationsBlob.radius;
 
-  movingImageBlob = new Blobbo();
-  movingImageBlob.radius = windowWidth / 20;
-  movingImageBlob.positionX = windowWidth / 10+ random(100);
-  movingImageBlob.positionY = (4 * windowHeight) / 10+ random(100);
-  movingImageBlob.color = "#f9eeed";
-  movingImageBlob.textColor = "black";
-  // movingImageBlob.text = "movingImage";
-  movingImageBlob.amplitude = random(0.033);
-  // movingImageBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
-  movingImageBlob.initialRadius = movingImageBlob.radius;
-  movingImageBlob.scaledRadius =  movingImageBlob.radius;
+  animationsBlob = new Blobbo();
+  animationsBlob.radius = windowWidth / 20;
+  animationsBlob.positionX = windowWidth / 10+ random(100);
+  animationsBlob.positionY = (4 * windowHeight) / 10+ random(100);
+  animationsBlob.color = "#f9eeed";
+  animationsBlob.textColor = "black";
+  // animationsBlob.text = "animations";
+  animationsBlob.amplitude = random(0.033);
+  // animationsBlob.url = "https://p5js.org/reference/#/p5.Element/mouseOver";
+  animationsBlob.initialRadius = animationsBlob.radius;
+  animationsBlob.scaledRadius =  animationsBlob.radius;
 
   
 
@@ -123,7 +123,7 @@ function draw() {
   netArtBlob.draw();
  
   installationsBlob.draw();
-  movingImageBlob.draw();
+  animationsBlob.draw();
   threeDGraphicsBlob.draw();
 
   artBlob.mouseOver();
@@ -132,7 +132,7 @@ function draw() {
   illustrationBlob.mouseOver();
   netArtBlob.mouseOver();
   installationsBlob.mouseOver();
-  movingImageBlob.mouseOver();
+  animationsBlob.mouseOver();
   threeDGraphicsBlob.mouseOver();
 }
 
@@ -146,7 +146,7 @@ function draw() {
 //   webDesignBlob.clicked();
 //   developmentBlob.clicked();
 //   installationsBlob.clicked();
-//   movingImageBlob.clicked();
+//   animationsBlob.clicked();
 //   creativeCodingBlob.clicked();
 //   threeDGraphicsBlob.clicked();
 // }
@@ -178,10 +178,10 @@ function windowResized() {
   installationsBlob.positionX = (3 * windowWidth) / 20;
   installationsBlob.positionY = windowHeight / 6;
 
-  //movingImage
-  movingImageBlob.radius = windowWidth / 20;
-  movingImageBlob.positionX = windowWidth / 10;
-  movingImageBlob.positionY = (4 * windowHeight) / 10;
+  //animations
+  animationsBlob.radius = windowWidth / 20;
+  animationsBlob.positionX = windowWidth / 10;
+  animationsBlob.positionY = (4 * windowHeight) / 10;
 
 
   //threeDGraphics
