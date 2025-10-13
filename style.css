@@ -202,6 +202,7 @@ align-self: stretch;  */
 .sectionIntro h2{
   font-weight: 500;
   max-width: 700px;
+  font-size: 1.4rem;
 }
 
 .projectContainer {
@@ -394,11 +395,19 @@ iframe.fullWidth{
   max-width: 700px;
 }
 
+.socialMedia{
+  display:flex;
+  gap:8px;
+}
+
 .socialMedia a{
   color:#141414;
   margin:8px;
   text-decoration:none ;
+}
 
+.socialMedia a i{
+  font-size:32px;
 }
 
 h1{
