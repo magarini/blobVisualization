@@ -93,6 +93,9 @@ a.active {
   display: none;
 }
 
+a{
+  color:#141414;
+}
 
 
 .filters {
@@ -581,6 +584,14 @@ button{
 
   h1{
     font-size:48px;
+  }
+
+  .intro h1{
+    font-size: 2.5rem;
+  }
+
+  .intro h2{
+    font-size: 1.5rem;
   }
 
   .projectPage .twoCols{
