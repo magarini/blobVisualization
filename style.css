@@ -10,6 +10,10 @@ body {
   height: 100dvh;
 }
 
+body.design {
+  background-color: #F3F3F3;
+}
+
 canvas {
   display: block;
   z-index: -1;
