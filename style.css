@@ -101,6 +101,9 @@ a{
   color:#141414;
 }
 
+p{
+  font-size: 1.4rem;
+}
 
 .filters {
   display: flex;
