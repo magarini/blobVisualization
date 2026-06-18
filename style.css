@@ -10,9 +10,9 @@ body {
   height: 100dvh;
 }
 
-body.design {
+/* body.design {
   background-color: #F3F3F3;
-}
+} */
 
 canvas {
   display: block;
